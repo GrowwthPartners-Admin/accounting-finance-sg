@@ -26,6 +26,16 @@ body {
   background: #bce9df;
 }
 
+/* Tailwind 4 gives buttons the plain arrow cursor. This brings back the hand, like links have.
+   It sits in the base layer so a cursor class on a single button still wins. */
+@layer base {
+  a[href],
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
 /* Page width. Grows a little on very large screens so the layout does not look lost. */
 .container-shell {
   --shell-max: 1320px;
