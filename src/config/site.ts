@@ -19,6 +19,14 @@ export const site = {
   privacyUrl: 'https://growwthpartners.com/privacy-policy',
   termsUrl: 'https://growwthpartners.com/terms',
 
+  // The hero photo. It is also the preview image when someone shares the page.
+  heroImage: {
+    src: '/image/hero-financial-dashboards.jpg',
+    width: 701,
+    height: 438,
+    alt: 'Accountant reviewing financial dashboards on a tablet and laptop',
+  },
+
   // Sent with every lead so the team can tell which page it came from.
   campaignMessage: 'Accounting-SG-Marketing-page',
 

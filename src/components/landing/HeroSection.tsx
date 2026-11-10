@@ -1,5 +1,6 @@
 import { ArrowIcon, CheckIcon } from './Icons'
 import { ContactButton } from '../contact/ContactModalContext'
+import { site } from '../../config/site'
 
 const stats = [
   { value: '95%', label: 'Client satisfaction' },
@@ -53,10 +54,10 @@ export function HeroSection() {
           <div className="absolute -right-3 -top-3 h-full w-full rounded-2xl border border-white/25" aria-hidden="true" />
           <div className="relative overflow-hidden rounded-2xl bg-[#194958] shadow-[0_28px_70px_rgba(0,0,0,.3)]">
             <img
-              src="/image/accounting-team.jpg"
-              width="1536"
-              height="1024"
-              alt="Two accountants reviewing a company's financial reports together"
+              src={site.heroImage.src}
+              width={site.heroImage.width}
+              height={site.heroImage.height}
+              alt={site.heroImage.alt}
               loading="eager"
               className="h-[320px] w-full object-cover object-center sm:h-[440px] lg:h-[525px] min-[1920px]:h-[600px] min-[2560px]:h-[650px]"
             />

@@ -21,7 +21,7 @@ const pageTitle = 'Accounting Services in Singapore | Growwth Partners'
 const pageDescription =
   'Accounting for Singapore startups and SMEs. Bookkeeping, IRAS and GST compliance, payroll, and investor-ready reporting. Book a free call.'
 const pageUrl = `${site.url}/`
-const shareImage = `${site.url}/image/accounting-team.jpg`
+const shareImage = `${site.url}${site.heroImage.src}`
 
 export function Component() {
   return (
@@ -38,15 +38,15 @@ export function Component() {
         <meta property="og:description" content={pageDescription} />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:image" content={shareImage} />
-        <meta property="og:image:width" content="1536" />
-        <meta property="og:image:height" content="1024" />
+        <meta property="og:image:width" content={String(site.heroImage.width)} />
+        <meta property="og:image:height" content={String(site.heroImage.height)} />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:image" content={shareImage} />
 
-        <link rel="preload" as="image" href="/image/accounting-team.jpg" />
+        <link rel="preload" as="image" href={site.heroImage.src} />
 
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

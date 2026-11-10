@@ -11,7 +11,7 @@ export const businessSchema = {
     'Accounting for Singapore startups and SMEs. Bookkeeping, IRAS and GST compliance, payroll, and investor-ready reporting.',
   url: `${site.url}/`,
   logo: `${site.url}/favicon.png`,
-  image: `${site.url}/image/accounting-team.jpg`,
+  image: `${site.url}${site.heroImage.src}`,
   telephone: site.phoneDisplay,
   email: site.email,
   areaServed: { '@type': 'Country', name: 'Singapore' },
