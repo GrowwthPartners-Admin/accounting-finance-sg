@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you
+
+Sitemap: https://accounting-services-singapore.growwthpartners.com/sitemap.xml
